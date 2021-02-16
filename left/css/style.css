@@ -1,0 +1,160 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  background: 0;
+  outline: 0;
+}
+body,
+html {
+  background: #000;
+  height: 100%;
+  width: 100%;
+}
+.top,
+.center,
+.bottom {
+  height: 33.3%;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.woman {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.woman__media {
+  width: 100%;
+  height: 100%;
+}
+.name {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 80%;
+}
+.name__media {
+  height: 100%;
+}
+.logo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  display: flex;
+}
+.logo__media {
+  width: 100%;
+}
+.logo__text{
+  position: absolute;
+  width: 40%;
+  left: 40%;
+  top: 20%;
+}
+.center {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider,
+.slider__container {
+  position: relative;
+  width: 100%;
+  max-height: 100%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.slick-initialized,.slick-slider{
+  max-height: 100%;
+}
+.slider__btn {
+  position: absolute;
+  z-index: 1;
+}
+.slider__pre {
+  left: 5px;
+}
+.slider__next {
+  right: 5px;
+}
+.popup {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  padding: 20px;
+  padding-top: 100px;
+  animation: fadeIn 2s ease;
+}
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes fadeOut{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+.close__media{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.popup__title{
+  margin-bottom: 25px;
+}
+.popup__text{
+  text-align: left;
+}
+.slider__item {
+  display: flex !important;
+  justify-content: center;
+  position: relative;
+}
+.slider__img {
+  width: 60%;
+  max-width: 218px;
+  max-height: 288.8px;
+  display: flex;
+  justify-content: center;
+  margin: 0 !important;
+}
+.img__media {
+  width: 100%;
+  margin: 0;
+  height: 100%;
+}
+.slick-track{
+  max-height: 100%;
+}
+.slider__plus {
+  position: absolute;
+  right: 20%;
+  width: 10%;
+  max-width: 45px;
+  max-height: 45px;
+}
+.plus__media {
+  width: 100%;
+}

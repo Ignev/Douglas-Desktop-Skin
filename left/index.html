@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <meta name="description" content="" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body id="left">
+    <div class="top">
+      <div class="name">
+        <img src="img/left-text.png" alt="" class="name__media" />
+      </div>
+      <div class="woman">
+        <img src="./img/top-img-1.png" alt="" class="woman__media">
+      </div>
+      <div class="logo">
+        <img src="./img/top-logo.png" alt="logo" class="logo__media" />
+        <img src="./img/top-logo-text.png" alt="" class="logo__text">
+      </div>
+    </div>
+    <div class="center">
+      <div class="slider__container">
+        <div class="slider" id="slider">
+          <div class="slider__item">
+            <div class="popup" id="popup1">
+              <button class="popup__close" id="close1">
+                <img src="./img/close.svg" alt="" class="close__media" />
+              </button>
+              <h3 class="popup__title">BORN IN ROMA UOMO</h3>
+              <p class="popup__text">
+                Born In Roma Uomo vereint verführerische Raffinesse mit <br>
+                holzig-frischer Männlichkeit. Zarte Veilchennoten treffen auf <br>
+                würzigen Salbei, scharfen Ingwer und leicht rauchiges Vetiver - <br>
+                das Ergebnis ist ein unvergessliches Dufterlebnis, das an einen <br>
+                Trip durch die engen Gassen Roms erinnert, an die schwarze  <br>
+                Lederjacke, die der Valentino-Mann auf dem Motorrad trägt. Als <br>
+                Hommage an die Architektur der ewigen Stadt wurde der Flakon mit <br>
+                der legendären Valentino-Niete verziert - denn wie der Duft <br>
+                wurde auch das italienische Modehaus in Rom geboren.
+              </p>
+            </div>
+            <button class="slider__plus" id="plus1">
+              <img
+                src="./img/plus.png"
+                alt="plus"
+                class="plus__media"
+                id="pluseMedia1"
+              />
+            </button>
+            <div class="slider__img">
+              <img src="./img/slide1.png" alt="" class="img__media" />
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="popup" id="popup2">
+              <button class="popup__close" id="close2">
+                <img src="./img/close.svg" alt="" class="close__media" />
+              </button>
+              <h3 class="popup__title">VOCE VIVA</h3>
+              <p class="popup__text">
+                Körperlos, aber so unvergesslich wie eine Stimme – VOCE VIVA von <br>
+                Valentino lädt alle Frauen dazu ein, das Leben und das Selbst zu <br>
+                zelebrieren, die Herzen anderer zu berühren und sie zu <br>
+                inspirieren. Das floral-holzige Haarparfum kreiert Emotionen für <br>
+                die Ewigkeit und trägt Ihre Meinung wie eine Botschaft in die <br>
+                Welt hinaus. Die Essenz von Bergamotte vereint sich in der <br>
+                strahlenden und prickelnden Kopfnote mit dem saftig-süßen Aroma <br>
+                von Mandarine und weckt alle Sinne, während ein Hauch von würzig <br>
+                frischem Ingwer die frischen, hesperidischen Noten durchdringt
+                und facettiert.
+              </p>
+            </div>
+            <button class="slider__plus" id="plus2">
+              <img
+                src="./img/plus.png"
+                alt="plus"
+                class="plus__media"
+                id="pluseMedia2"
+              />
+            </button>
+            <div class="slider__img">
+              <img src="./img/slide2.png" alt="" class="img__media" />
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="popup" id="popup3">
+              <button class="popup__close" id="close3">
+                <img src="./img/close.svg" alt="" class="close__media" />
+              </button>
+              <h3 class="popup__title">VALENTINA</h3>
+              <p class="popup__text"> 
+                Ein funkelnd floraler Orientalduft mit italienischen Wurzeln - <br>
+                neu interpretiert mit der Frische italienischer Inhaltsstoffe. <br>
+                Jeder Aspekt reflektiert die facettenreiche Persönlichkeit von <br>
+                Valentinos Valentina. Die üppige Frische der kalabrischen <br>
+                Bergamotte wird durch weiße Albatrüffel verstärkt. Die florale <br>
+                Kühnheit von Jasmin und Amalfi-Orangenblüte wird durch Wildbeere <br>
+                abgerundet. Die fesselnde Sinnlichkeit von Zedernholz und Ambra <br>
+                wird perfekt ergänzt durch einen Hauch süchtigmachender Vanille.
+              </p> 
+            </div>
+            <button class="slider__plus" id="plus3">
+              <img
+                src="./img/plus.png"
+                alt="plus"
+                class="plus__media"
+                id="pluseMedia3"
+              />
+            </button>
+            <div class="slider__img">
+              <img src="./img/slide3.png" alt="" class="img__media" />
+            </div>
+          </div>
+        </div>
+        <button class="slider__pre slider__btn">
+          <img src="./img/pre.svg" alt="pre" class="pre__media" />
+        </button>
+        <button class="slider__next slider__btn">
+          <img src="./img/next.svg" alt="next" class="next__media" />
+        </button>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="woman">
+        <img src="./img/bottom-img-1.png" alt="" class="woman__media">
+      </div>
+      <div class="bottom__logo">
+        <div class="bottom__text"></div>
+      </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      var isFixed = true;
+      var clickTag = "https://klarna.de",
+        clickoutLinkRedirect = readGETParameter("clicktag"),
+        clickoutLink2 = readGETParameter("dspxct"),
+        clickoutEncodeLevel = readGETParameter("encodelevel");
+      function readGETParameter(c) {
+        var o = window.location.search.substring(1),
+          n = o.split("&");
+        for (var e = 0; e < n.length; e++) {
+          var i = n[e].split("=");
+          if (i[0] == c) {
+            return decodeURIComponent(i[1]);
+          }
+        }
+        return c == "encodelevel" ? 2 : 0;
+      }
+      function clickout_1() {
+        var e = clickTag;
+        if (clickoutLinkRedirect != 0) {
+          e = clickoutLinkRedirect + encodeURIComponent(clickTag);
+        }
+        clickoutEncodeLevel = parseInt(clickoutEncodeLevel);
+        if (Number.isInteger(clickoutEncodeLevel) && clickoutLink2 != 0) {
+          for (var c = 0; c < clickoutEncodeLevel; c++) {
+            if (clickoutLink2 != 0) {
+              e = encodeURIComponent(e);
+            }
+          }
+          e = clickoutLink2 + e;
+        } else {
+          if (clickoutLink2 != 0) {
+            e = clickoutLink2 + encodeURIComponent(encodeURIComponent(e));
+          }
+        }
+        window.open(e);
+      }
+      function integrateTracking() {}
+
+      /**
+       * integrate Tracking: first time if Mraid:isViewable
+       */
+      function integrateTracking() {
+        console.log("track: integrateTracking");
+      }
+
+      // BEGIN: video scripts
+
+      function track_vtr(progress) {
+        if (progress == 0) {
+          console.log(progress);
+        } else if (progress == 25) {
+          console.log(progress);
+        } else if (progress == 50) {
+          console.log(progress);
+        } else if (progress == 75) {
+          console.log(progress);
+        } else if (progress == 100) {
+          console.log(progress);
+        }
+      }
+    </script>
+  </body>
+</html>

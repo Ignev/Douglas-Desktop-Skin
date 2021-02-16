@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <meta name="description" content="" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body id="left">
+    <div class="top">
+      <div class="woman">
+        <img src="./img/top-img-1.png" alt="" class="woman__media">
+      </div>
+      <div class="logo">
+        <img src="./img/top-logo.png" alt="logo" class="logo__media" />
+        <img src="./img/top-logo-text.png" alt="" class="logo__text">
+      </div>
+    </div>
+    <div class="center">
+        <img src="./video/ZQ7h.gif" class="video">
+    </div>
+    <div class="bottom">
+      <div class="bottom__logo">
+        <div class="bottom__text"></div>
+      </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      var isFixed = true;
+      var clickTag = "https://klarna.de",
+        clickoutLinkRedirect = readGETParameter("clicktag"),
+        clickoutLink2 = readGETParameter("dspxct"),
+        clickoutEncodeLevel = readGETParameter("encodelevel");
+      function readGETParameter(c) {
+        var o = window.location.search.substring(1),
+          n = o.split("&");
+        for (var e = 0; e < n.length; e++) {
+          var i = n[e].split("=");
+          if (i[0] == c) {
+            return decodeURIComponent(i[1]);
+          }
+        }
+        return c == "encodelevel" ? 2 : 0;
+      }
+      function clickout_1() {
+        var e = clickTag;
+        if (clickoutLinkRedirect != 0) {
+          e = clickoutLinkRedirect + encodeURIComponent(clickTag);
+        }
+        clickoutEncodeLevel = parseInt(clickoutEncodeLevel);
+        if (Number.isInteger(clickoutEncodeLevel) && clickoutLink2 != 0) {
+          for (var c = 0; c < clickoutEncodeLevel; c++) {
+            if (clickoutLink2 != 0) {
+              e = encodeURIComponent(e);
+            }
+          }
+          e = clickoutLink2 + e;
+        } else {
+          if (clickoutLink2 != 0) {
+            e = clickoutLink2 + encodeURIComponent(encodeURIComponent(e));
+          }
+        }
+        window.open(e);
+      }
+      function integrateTracking() {}
+
+      /**
+       * integrate Tracking: first time if Mraid:isViewable
+       */
+      function integrateTracking() {
+        console.log("track: integrateTracking");
+      }
+
+      // BEGIN: video scripts
+
+      function track_vtr(progress) {
+        if (progress == 0) {
+          console.log(progress);
+        } else if (progress == 25) {
+          console.log(progress);
+        } else if (progress == 50) {
+          console.log(progress);
+        } else if (progress == 75) {
+          console.log(progress);
+        } else if (progress == 100) {
+          console.log(progress);
+        }
+      }
+    </script>
+  </body>
+</html>
