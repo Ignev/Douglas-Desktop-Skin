@@ -11,10 +11,12 @@ $(".slider").slick({
   pauseOnHover: true,
   autoplaySpeed: 3000,
   arrows: true,
-  autoplay: false,
+  autoplay: true,
   prevArrow: ".slider__pre",
   nextArrow: ".slider__next",
   swipe: false,
+  dots: true
+
 });
 
 function closePopup(closeBtnSelector, popupSelector) {
