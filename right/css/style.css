@@ -17,14 +17,19 @@ html {
 .top,
 .center,
 .bottom {
-  height: 33.3%;
   position: relative;
   width: 100%;
   overflow: hidden;
 }
+.top,.center{
+  height: 38%;
+}
+.bottom{
+  height: 24%;
+}
 .top{
-  background: url(../img/top-img-1.jpg) 50% 30% no-repeat;
-  background-size: 100%;
+  background: url(../img/top-img-1.jpg) 50% 50% no-repeat;
+  background-size: cover ;
 }
 .woman {
   width: 100%;
@@ -33,6 +38,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 0;
+  opacity: 0;
 }
 .woman__media {
   width: 100%;

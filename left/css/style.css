@@ -17,30 +17,63 @@ html {
 .top,
 .center,
 .bottom {
-  height: 33.3%;
   position: relative;
   width: 100%;
   overflow: hidden;
 }
+.top,.center{
+  height: 38%;
+}
 .top{
-  background: url(../img/top-img-1.jpg) 50% 0% no-repeat;
-  background-size: auto 100%;
+  background: url(../img/top-img-1.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  animation: fadeBg 1s ease;
 }
 .bottom{
-  background: url(../img/bottom-img-1.jpg) 30% 0% no-repeat;
-  background-size: auto 100% ;
+  
+  height: 24%;
+  animation: fadeBg 1s ease;
 }
-.woman {
+@keyframes fadeBg {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+#top-woman-1{
+  background: url(../img/top-img-3.jpg) top no-repeat;
+  background-size: cover;
+}
+#top-woman-2{
+  background: url(../img/top-img-2.jpg) 50% 50% no-repeat;
+  background-size: cover ;
+}
+#top-woman-3{
+  background: url(../img/top-img-1.jpg) 50% 50% no-repeat;
+  background-size: cover ;
+}
+#bottom-woman-1{
+  background: url(../img/bottom-img-3.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+#bottom-woman-2{
+  background: url(../img/bottom-img-2.jpg) 50% 50% no-repeat;
+  background-size: cover ;
+}
+#bottom-woman-3{
+  background: url(../img/bottom-img-1.jpg) 50% 50% no-repeat;
+  background-size: cover ;
+}
+.woman,.woman-bottom {
   width: 100%;
   height: 100%;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.woman__media {
-  width: 100%;
-  height: 100%;
+  position: absolute;
 }
 .name {
   position: absolute;
