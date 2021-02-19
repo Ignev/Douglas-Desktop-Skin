@@ -33,9 +33,9 @@ html {
   height: 38%;
 }
 .top{
-  background: url(../img/top-img-1.jpg) 50% 50% no-repeat;
   background-size: cover;
   animation: fadeBg 1s ease;
+  position: relative;
 }
 .bottom{
   
@@ -74,14 +74,26 @@ html {
   background: url(../img/bottom-img-1.jpg) 50% 50% no-repeat;
   background-size: cover ;
 }
-.woman,.woman-bottom {
+.top-woman{
   width: 100%;
   height: 100%;
+  position: relative;
+}
+.slick-list, .slick-track{
+  height: 100%;
+}
+.woman{
+  width: 100%;
+  height: 450px;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
+}
+.woman-bottom{
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+.woman__media{
+  object-fit: cover;
 }
 .name {
   position: absolute;
@@ -172,7 +184,7 @@ li.slick-active{
   padding: 20px;
   padding-top: 10px;
   animation: fadeIn 2s ease;
-  font-size: 8px;
+  font-size: 3.2vw;
   font-family: "Avenir", sans-serif;
 }
 @keyframes fadeIn{

@@ -38,8 +38,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 0;
-  opacity: 0;
 }
 .woman__media {
   width: 100%;

@@ -15,9 +15,25 @@ $(".slider").slick({
   prevArrow: ".slider__pre",
   nextArrow: ".slider__next",
   swipe: false,
-  dots: true
-
+  dots: true,
+  asNavFor: ".top-woman",
 });
+$(".top-woman").slick({
+  infinite: true,
+  swipe: false,
+  fade: true,
+  cssEase: 'linear',
+  asNavFor: ".slider",
+  arrows: false,
+});
+$(".bottom-woman").slick({
+  infinite: true,
+  swipe: false,
+  fade: true,
+  cssEase: 'linear',
+  arrows: false,
+});
+
 
 function closePopup(closeBtnSelector, popupSelector) {
   const closeBtn = document.querySelector(closeBtnSelector);
@@ -39,8 +55,7 @@ function openPopup(openBtnSelector, popupSelector) {
     popup.style.animation = "fadeIn 1s ease";
   });
 }
-let count = 1;
-console.log(count);
+
 
 closePopup("#close1", "#popup1");
 closePopup("#close2", "#popup2");
@@ -50,9 +65,24 @@ openPopup("#plus2", "#popup2");
 openPopup("#plus3", "#popup3");
 
 $(".slider").on(
-  "afterChange",
+  "beforeChange",
   function (event, slick, currentSlide, nextSlide) {
-    count++;
+    const popups = document.querySelectorAll(".popup");
+    $(".bottom-woman").slick('slickGoTo', $(".slider").slick("slickCurrentSlide")+1);
+    console.log(12);
+    popups.forEach((item) => {
+      item.style.display = "none";
+    });
+  }
+);
+
+
+/*
+
+let count = 1;
+console.log(count);
+
+count++;
     const womanOne = document.querySelector("#top-woman-1");
     const womanTwo = document.querySelector("#top-woman-2");
     const womanThree = document.querySelector("#top-woman-3");
@@ -100,15 +130,9 @@ if(count <= 3){
           BottomWomanTwo.style.animation = "";
         }, 1000)
     }
-    const popups = document.querySelectorAll(".popup");
-    popups.forEach((item) => {
-      item.style.display = "none";
-    });
-  }
-);
 
 
-/*
+
     if(count > 2){
       count = 0;
     }
