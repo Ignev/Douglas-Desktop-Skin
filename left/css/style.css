@@ -51,19 +51,19 @@ html {
   }
 }
 #top-woman-1{
-  background: url(../img/top-img-3.jpg) top no-repeat;
+  background: url(../img/top-img-1.jpg) 50% 50% no-repeat;
   background-size: cover;
 }
 #top-woman-2{
-  background: url(../img/top-img-2.jpg) 50% 50% no-repeat;
+  background: url(../img/top-img-2.jpg) 50% 0% no-repeat;
   background-size: cover ;
 }
 #top-woman-3{
-  background: url(../img/top-img-1.jpg) 50% 50% no-repeat;
+  background: url(../img/top-img-3.jpg) 50% 50% no-repeat;
   background-size: cover ;
 }
 #bottom-woman-1{
-  background: url(../img/bottom-img-3.jpg) 50% 50% no-repeat;
+  background: url(../img/bottom-img-1.jpg) 50% 50% no-repeat;
   background-size: cover;
 }
 #bottom-woman-2{
@@ -71,7 +71,7 @@ html {
   background-size: cover ;
 }
 #bottom-woman-3{
-  background: url(../img/bottom-img-1.jpg) 50% 50% no-repeat;
+  background: url(../img/bottom-img-3.jpg) 50% 50% no-repeat;
   background-size: cover ;
 }
 .top-woman{
@@ -84,25 +84,22 @@ html {
 }
 .woman{
   width: 100%;
-  height: 450px;
+  height: 39vh;
   overflow: hidden;
 }
 .woman-bottom{
   width: 100%;
-  height: 300px;
+  height: 24vh;
   overflow: hidden;
 }
 .woman__media{
   object-fit: cover;
 }
-.name {
+.name__media {
   position: absolute;
   top: 0;
   right: 0;
   height: 80%;
-}
-.name__media {
-  height: 100%;
 }
 .logo {
   position: absolute;
@@ -184,7 +181,7 @@ li.slick-active{
   padding: 20px;
   padding-top: 10px;
   animation: fadeIn 2s ease;
-  font-size: 3vw;
+  font-size: 3.1vw;
   font-family: "Avenir", sans-serif;
 }
 @keyframes fadeIn{
