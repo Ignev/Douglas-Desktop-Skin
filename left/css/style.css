@@ -184,7 +184,7 @@ li.slick-active{
   padding: 20px;
   padding-top: 10px;
   animation: fadeIn 2s ease;
-  font-size: 3.2vw;
+  font-size: 3vw;
   font-family: "Avenir", sans-serif;
 }
 @keyframes fadeIn{
@@ -246,33 +246,5 @@ li.slick-active{
   width: 100%;
 }
 
-/* @media screen and (max-width: 1280px){
-  .top{
-    background: url(../img/top-img-1.jpg) 50% 0% no-repeat;
-    background-size: 170%;
-  }
-  .bottom{
-    background: url(../img/bottom-img-1.jpg) 30% 0% no-repeat;
-    background-size: 200%;
-  }
-}
-@media screen and (max-width: 1440px){
-  .top{
-    background: url(../img/top-img-1.jpg) 50% 0% no-repeat;
-    background-size: 150%;
-  }
-  .bottom{
-    background: url(../img/bottom-img-1.jpg) 75% 0% no-repeat;
-    background-size: 210%;
-  }
-}
-@media screen and (max-width: 1920px){
-  .top{
-    background: url(../img/top-img-1.jpg) 50% 0% no-repeat;
-    background-size: 110%;
-  }
-  .bottom{
-    background: url(../img/bottom-img-1.jpg) 30% 0% no-repeat;
-    background-size: 110%;
-  }
-} */
+
+
