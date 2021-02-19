@@ -21,11 +21,11 @@ html {
   width: 100%;
   overflow: hidden;
 }
-.top,.center{
+.top{
   height: 38%;
 }
-.bottom{
-  height: 24%;
+.center{
+  padding-top: 20px;
 }
 .top{
   background-size: cover ;
