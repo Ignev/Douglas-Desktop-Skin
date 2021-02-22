@@ -10,26 +10,16 @@
 </head>
 
 <body id='top'>
-    <div id="ad-viewport">
-        <div id="ad-container">
-            <div id="ad-content">
-            </div>
-        </div>
-    </div>
+
+
+    <script src="js/script.js"></script>
     <script>
 
         var isFixed = true;
         var clickTag = 'https://klarna.de', clickoutLinkRedirect = readGETParameter('clicktag'), clickoutLink2 = readGETParameter('dspxct'), clickoutEncodeLevel = readGETParameter('encodelevel'); function readGETParameter(c) { var o = window.location.search.substring(1), n = o.split('&'); for (var e = 0; e < n.length; e++) { var i = n[e].split('='); if (i[0] == c) { return decodeURIComponent(i[1]) } }; return c == 'encodelevel' ? 2 : 0 }; function clickout_1() { var e = clickTag; if (clickoutLinkRedirect != 0) { e = clickoutLinkRedirect + encodeURIComponent(clickTag) }; clickoutEncodeLevel = parseInt(clickoutEncodeLevel); if (Number.isInteger(clickoutEncodeLevel) && clickoutLink2 != 0) { for (var c = 0; c < clickoutEncodeLevel; c++) { if (clickoutLink2 != 0) { e = encodeURIComponent(e) } }; e = clickoutLink2 + e } else { if (clickoutLink2 != 0) { e = clickoutLink2 + encodeURIComponent(encodeURIComponent(e)) } }; window.open(e) }; function integrateTracking() { };
-
-        /**
-         * integrate Tracking: first time if Mraid:isViewable
-         */
         function integrateTracking() {
             console.log('track: integrateTracking')
         }
-
-        // BEGIN: video scripts
-
         function track_vtr(progress) {
             if (progress == 0) {
                 console.log(progress);
@@ -45,7 +35,6 @@
         }
 
     </script>
-    <script type="text/javascript" src="./js/script.js"></script>
 </body>
 
 </html>

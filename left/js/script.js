@@ -106,17 +106,11 @@ $(".slider").on(
       var $this = $(this);
       if ($($this).hasClass("slider__next")) {
         $(".bottom-woman").slick("slickNext");
-        console.log(5);
       }
       if($($this).hasClass("slider__pre")){
         $(".bottom-woman").slick("slickPrev");
       }
     });
-    // $(".bottom-woman").slick(
-    //   "slickGoTo",
-    //   $(".slider").slick("slickCurrentSlide") + 1
-    // );
-    console.log(12);
     popups.forEach((item) => {
       item.style.display = "none";
     });

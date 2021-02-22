@@ -21,6 +21,13 @@ $(".center").slick({
   autoplay: true,
   asNavFor: ".top-woman",
 });
+document.addEventListener("mousemove", function (e) {
+  const mybody = document.querySelector(".bottom__canvas");
+  const round = document.createElement("span");
+  round.style.left = -50 + e.offsetX + "px";
+  round.style.top = -50 + e.offsetY + "px";
+  mybody.appendChild(round);
+});
 
 window.addEventListener(
   "message",
@@ -28,7 +35,6 @@ window.addEventListener(
     if (typeof event.data !== "undefined") {
       try {
         var obj = JSON.parse(event.data);
-        console.log(obj.arrow);
         if (typeof obj.arrow !== "undefined") {
           if (obj.arrow == "prev") {
             $(".center").slick("slickPrev");
