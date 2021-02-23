@@ -10,6 +10,18 @@ $(".slider").slick({
   dots: true,
   asNavFor: ".top-woman",
 });
+$(".name").slick({
+  infinite: true,
+  speed: 500,
+  autoplaySpeed: 3000,
+  arrows: true,
+  autoplay: false,
+  prevArrow: ".slider__pre",
+  nextArrow: ".slider__next",
+  swipe: false,
+  dots: true,
+  asNavFor: ".top-woman",
+});
 $(".top-woman").slick({
   infinite: true,
   swipe: false,

@@ -62,7 +62,7 @@ html {
   background-size: cover ;
 }
 #bottom-woman-1{
-  background: url(../img/bottom-img-1.jpg) 50% 50% no-repeat;
+  background: url(../img/bottom-img-1.jpg) 50% 20% no-repeat;
   background-size: cover;
 }
 #bottom-woman-2{
@@ -94,11 +94,18 @@ html {
 .woman__media{
   object-fit: cover;
 }
+.name{
+  z-index: 1000;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 80%;
+}
 .name__media {
   position: absolute;
   top: 0;
   right: 0;
-  height: 80%;
+  height: 100%;
 }
 .logo {
   position: absolute;
@@ -245,7 +252,7 @@ li.slick-active{
 .bottom__button {
   top: -1%;
   left: 0;
-  height: 20% !important;
+  height: 15% !important;
   z-index: 999;
   position: absolute;
   width: 70%;
@@ -258,11 +265,10 @@ li.slick-active{
 }
 .button__media {
   position: absolute;
-  width: 60%;
-  right: 30%;
-  top: 25%;
+  width: 40%;
+  right: 40%;
+  top: 10%;
 }
-
 .bottom__text {
   font-family: "Avenir", sans-serif;
   width: 100%;
@@ -279,6 +285,6 @@ li.slick-active{
   padding: 5px;
 }
 .text__logo {
-  width: 30vw;
+  width: 20vw;
 }
 

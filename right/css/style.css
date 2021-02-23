@@ -145,9 +145,9 @@ span {
 }
 .button__media {
   position: absolute;
-  width: 50%;
+  width: 40%;
   left: 40%;
-  top: 20%;
+  top: 10%;
 }
 .bottom__text {
   font-family: "Avenir", sans-serif;
@@ -165,5 +165,5 @@ span {
   padding: 5px;
 }
 .text__logo {
-  width: 30vw;
+  width: 20vw;
 }
