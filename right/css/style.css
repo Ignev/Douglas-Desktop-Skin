@@ -114,24 +114,27 @@ html {
   width: 100%;
 }
 .bottom__canvas {
-  width: 100%;
   height: 100%;
+  width: 100%;
   background-color: #000;
   background-image: url(../img/tap.png) ;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 70px 36px;
+  position: relative;
+  overflow: hidden;
 }
 span {
   width: 100px;
   height: 100px;
   position: absolute;
-  background: url(../img/logo-1.png) no-repeat;
+  background-image: url(../img/top-logo-text.png);
+  background-repeat: no-repeat;
   pointer-events: none;
   border-radius: 50%;
   background-attachment: fixed;
-  background-position: center;
-  background-size: 1%;
+  background-position: 50% 90%;
+  background-size: 50%;
   background-color: #fff;
 }
 .bottom__button {

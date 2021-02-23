@@ -21,7 +21,6 @@ $(".center").slick({
 });
 const mybody = document.querySelector(".bottom__canvas");
 mybody.addEventListener("mousemove", function (e) {
-  
   const round = document.createElement("span");
   round.style.left = -50 + e.offsetX + "px";
   round.style.top = -50 + e.offsetY + "px";
