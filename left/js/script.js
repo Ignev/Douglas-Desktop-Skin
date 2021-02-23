@@ -19,8 +19,7 @@ $(".name").slick({
   prevArrow: ".slider__pre",
   nextArrow: ".slider__next",
   swipe: false,
-  dots: true,
-  asNavFor: ".top-woman",
+  dots: false,
 });
 $(".top-woman").slick({
   infinite: true,
@@ -75,6 +74,9 @@ $(".slider__btn").click(function (e) {
   if ($($this).hasClass("slider__next")) {
     arrow = "next";
   }
+  if ($($this).hasClass("slider__pre")) {
+    arrow = "prev";
+  }
   clickLeft = true;
   obj = { arrow: arrow, clickLeft: clickLeft };
   parent.postMessage(JSON.stringify(obj), "*");
@@ -117,6 +119,12 @@ $(".slider__btn").click(function (e) {
   }
   if($($this).hasClass("slider__pre")){
     $(".bottom-woman").slick("slickPrev");
+  }
+  if ($($this).hasClass("slider__next")) {
+    $(".top-woman").slick("slickNext");
+  }
+  if($($this).hasClass("slider__pre")){
+    $(".top-woman").slick("slickPrev");
   }
 });
 

@@ -97,15 +97,16 @@ html {
 .name{
   z-index: 1000;
   position: absolute;
-  right: 0;
+  right: 0%;
   top: 0;
   height: 80%;
+  width: 20%;
 }
 .name__media {
   position: absolute;
   top: 0;
   right: 0;
-  height: 100%;
+  object-fit: cover;
 }
 .logo {
   position: absolute;
