@@ -3,7 +3,7 @@ $(".slider").slick({
   speed: 500,
   autoplaySpeed: 3000,
   arrows: true,
-  autoplay: true,
+  autoplay: false,
   prevArrow: ".slider__pre",
   nextArrow: ".slider__next",
   swipe: false,
@@ -19,7 +19,7 @@ $(".top-woman").slick({
   speed: 500,
   autoplaySpeed: 3000,
   arrows: false,
-  autoplay: true,
+  autoplay: false,
 });
 $(".bottom-woman").slick({
   infinite: true,
@@ -29,7 +29,7 @@ $(".bottom-woman").slick({
   arrows: false,
   speed: 500,
   autoplaySpeed: 3000,
-  autoplay: true,
+  autoplay: false,
   asNavFor: ".slider",
 });
 
@@ -96,21 +96,22 @@ openPopup("#plus1", "#popup1");
 openPopup("#plus2", "#popup2");
 openPopup("#plus3", "#popup3");
 
+$(".slider__btn").click(function (e) {
+  e.preventDefault();
+  e.stopPropagation();
+  var $this = $(this);
+  if ($($this).hasClass("slider__next")) {
+    $(".bottom-woman").slick("slickNext");
+  }
+  if($($this).hasClass("slider__pre")){
+    $(".bottom-woman").slick("slickPrev");
+  }
+});
+
 $(".slider").on(
   "beforeChange",
   function (event, slick, currentSlide, nextSlide) {
     const popups = document.querySelectorAll(".popup");
-    $(".slider__btn").click(function (e) {
-      e.preventDefault();
-      e.stopPropagation();
-      var $this = $(this);
-      if ($($this).hasClass("slider__next")) {
-        $(".bottom-woman").slick("slickNext");
-      }
-      if($($this).hasClass("slider__pre")){
-        $(".bottom-woman").slick("slickPrev");
-      }
-    });
     popups.forEach((item) => {
       item.style.display = "none";
     });

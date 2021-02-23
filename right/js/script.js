@@ -4,9 +4,8 @@ $(".top-woman").slick({
   fade: true,
   cssEase: "linear",
   speed: 500,
-  autoplaySpeed: 3000,
   arrows: false,
-  autoplay: true,
+  autoplay: false,
   asNavFor: ".center",
 });
 
@@ -16,13 +15,13 @@ $(".center").slick({
   fade: true,
   cssEase: "linear",
   speed: 500,
-  autoplaySpeed: 3000,
   arrows: false,
-  autoplay: true,
+  autoplay: false,
   asNavFor: ".top-woman",
 });
-document.addEventListener("mousemove", function (e) {
-  const mybody = document.querySelector(".bottom__canvas");
+const mybody = document.querySelector(".bottom__canvas");
+mybody.addEventListener("mousemove", function (e) {
+  
   const round = document.createElement("span");
   round.style.left = -50 + e.offsetX + "px";
   round.style.top = -50 + e.offsetY + "px";
