@@ -20,6 +20,7 @@ $(".name").slick({
   nextArrow: ".slider__next",
   swipe: false,
   dots: false,
+  vertical: true,
 });
 $(".top-woman").slick({
   infinite: true,

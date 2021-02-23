@@ -98,7 +98,7 @@ html {
   z-index: 1000;
   position: absolute;
   right: -1%;
-  top: 0;
+  top: -1%;
   height: 80%;
   width: 20%;
   margin-left: 5px;
@@ -255,7 +255,7 @@ li.slick-active{
   height: 15% !important;
   z-index: 999;
   position: absolute;
-  width: 70%;
+  width: 80%;
   display: flex;
   height: 12%;
 }
@@ -265,7 +265,7 @@ li.slick-active{
 }
 .button__media {
   position: absolute;
-  width: 40%;
+  width: 50%;
   right: 40%;
   top: 10%;
 }
