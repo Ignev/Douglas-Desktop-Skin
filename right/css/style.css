@@ -99,7 +99,7 @@ html {
   padding-bottom: 20px;
   background: #fff;
 }
-.slick-slide {
+.center .slick-slide {
   position: relative;
   display: flex !important;
   justify-content: center;
