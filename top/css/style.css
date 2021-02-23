@@ -15,7 +15,11 @@ html {
 }
 body,
 html {
-  background: #000;
+  background-color: #000;
+  background-image: url(../img/tap.png) ;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 140px 72px;
 }
 span{
   width: 150px;
