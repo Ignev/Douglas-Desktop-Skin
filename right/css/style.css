@@ -126,7 +126,7 @@ span {
 .bottom__button {
   top: 0;
   right: 0;
-  height: 10%;
+  height: 15% !important;
   z-index: 999;
   position: absolute;
   width: 70%;
@@ -152,13 +152,12 @@ span {
   background: #000;
   padding: 10px;
   color: #e6e5eb;
-  font-size: 16px;
+  font-size: 3.5vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 5px;
 }
 .text__logo {
-  width: 154px;
-  height: 35px;
+  width: 30vw;
 }
