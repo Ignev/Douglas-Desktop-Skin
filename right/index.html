@@ -14,6 +14,7 @@
   </head>
 
   <body id="right">
+    <div id="hellopreloader"><div id="hellopreloader_preload"></div></div>
     <div class="top">
       <div class="top-woman">
         <div class="woman" id="top-woman-1"></div>
@@ -39,14 +40,30 @@
       <div class="bottom__canvas"></div>
       <div class="bottom__text">
         <p>ERHÄLTLICH BEI</p>
-        <img src="./img/bottom-text.png" alt="" class="text__logo">
+        <img src="./img/bottom-text.png" alt="" class="text__logo" />
       </div>
-      
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/script.js"></script>
     <script>
+      var hellopreloader = document.getElementById("hellopreloader_preload");
+
+      function fadeOutnojquery(el) {
+        el.style.opacity = 1;
+        var interhellopreloader = setInterval(function () {
+          el.style.opacity = el.style.opacity - 0.05;
+          if (el.style.opacity <= 0.05) {
+            clearInterval(interhellopreloader);
+            hellopreloader.style.display = "none";
+          }
+        }, 16);
+      }
+      window.onload = function () {
+        setTimeout(function () {
+          fadeOutnojquery(hellopreloader);
+        }, 1000);
+      };
       var isFixed = true;
       var clickTag = "https://klarna.de",
         clickoutLinkRedirect = readGETParameter("clicktag"),

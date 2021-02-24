@@ -14,6 +14,7 @@
   </head>
 
   <body id="left">
+    <div id="hellopreloader"><div id="hellopreloader_preload"></div></div>
     <div class="top" id="top">
       <div class="name">
         <img src="img/left-text-1.png" alt="" class="name__media" />
@@ -21,15 +22,9 @@
         <img src="img/left-text-3.png" alt="" class="name__media" />
       </div>
       <div class="top-woman">
-        <div class="woman" id="top-woman-1">
-          
-        </div>
-        <div class="woman" id="top-woman-2">
-          
-        </div>
-        <div class="woman" id="top-woman-3">
-          
-        </div>
+        <div class="woman" id="top-woman-1"></div>
+        <div class="woman" id="top-woman-2"></div>
+        <div class="woman" id="top-woman-3"></div>
       </div>
 
       <div class="logo">
@@ -153,7 +148,7 @@
       <div class="bottom__logo">
         <div class="bottom__text">
           <p>ERHÄLTLICH BEI</p>
-          <img src="./img/bottom-text.png" alt="" class="text__logo">
+          <img src="./img/bottom-text.png" alt="" class="text__logo" />
         </div>
       </div>
     </div>
@@ -161,6 +156,23 @@
     <script src="js/slick.js"></script>
     <script src="js/script.js"></script>
     <script>
+      var hellopreloader = document.getElementById("hellopreloader_preload");
+
+      function fadeOutnojquery(el) {
+        el.style.opacity = 1;
+        var interhellopreloader = setInterval(function () {
+          el.style.opacity = el.style.opacity - 0.05;
+          if (el.style.opacity <= 0.05) {
+            clearInterval(interhellopreloader);
+            hellopreloader.style.display = "none";
+          }
+        }, 16);
+      }
+      window.onload = function () {
+        setTimeout(function () {
+          fadeOutnojquery(hellopreloader);
+        }, 1000);
+      };
       var isFixed = true;
       var clickTag = "https://klarna.de",
         clickoutLinkRedirect = readGETParameter("clicktag"),
