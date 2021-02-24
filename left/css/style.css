@@ -100,13 +100,24 @@ html {
   position: absolute;
   right: -1%;
   top: -1%;
-  height: 80%;
+  height: 79%;
   width: 20%;
   margin-left: 5px;
+  background-image: url(../img/name-bg.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 130%;
+  overflow: hidden;
 }
+
 .name__media {
-  width: 100% !important;
+  width: 250% !important;
   height: 30vh;
+  color: #fff;
+  font-size: 15px;
+  transform: translateX(70px) rotate(-90deg);
+  white-space: nowrap;
+  overflow: hidden;
 }
 .logo {
   position: absolute;
