@@ -22,7 +22,6 @@ html {
   height: 100%;
   width: 100%;
   position: relative;
-  font-family: "Avenir", sans-serif;
 }
 .top,
 .center,
@@ -101,25 +100,13 @@ html {
   position: absolute;
   right: -1%;
   top: -1%;
-  height: 90%;
+  height: 80%;
   width: 20%;
   margin-left: 5px;
-  background-image: url(../img/name-bg.png);
-  background-repeat: no-repeat;
-  background-position: 100% 0;
-  background-size: 130%;
-  overflow: hidden;
-  font-family: "Avenir", sans-serif;
 }
-
 .name__media {
-  width: 250% !important;
+  width: 100% !important;
   height: 30vh;
-  color: #fff;
-  font-size: 15px;
-  transform: translateX(70px) translateY(-20px) rotate(-90deg);
-  white-space: nowrap;
-  overflow: hidden;
 }
 .logo {
   position: absolute;
@@ -256,6 +243,12 @@ li.slick-active{
   width: 100%;
   margin: 0;
   height: 100%;
+}
+.img__media1{
+  width: 120%;
+}
+.img__media3{
+  width: 110%;
 }
 .slick-track{
   max-height: 100%;

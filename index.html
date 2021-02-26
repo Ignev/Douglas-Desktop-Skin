@@ -1,274 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title></title>
     <style type="text/css">
-        body{
-            background: #000;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        *,*::after,*::before {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      body {
+        background: #000;
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        .header {
-            display: none;
-            position: relative;
-            visibility: visible;
-            width: 960px;
-            height: 250px;
-            margin: 0px auto;
-            background-color: red;
-        }
+      .header {
+        display: none;
+        position: relative;
+        visibility: visible;
+        width: 960px;
+        height: 250px;
+        margin: 0px auto;
+        background-color: red;
+      }
 
-        #content-div {
-            padding: 0;
-            margin: 0 auto;
-            text-align: center;
-            width: 100%;
-            position: relative;
-        }
+      #content-div {
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        position: relative;
+      }
 
-        #left-banner {
-            position: fixed;
-            top: 0;
-            height: 100%;
-            width: calc((100% - 960px)/2);
-            transform: translateX(1px);
-        }
+      #left-banner {
+        position: fixed;
+        top: 0;
+        height: 100%;
+        width: calc((100% - 960px) / 2);
+        transform: translateX(1px);
+      }
 
-        #right-banner {
-            position: fixed;
-            top: 0;
-            height: 100%;
-            right:0;
-            width: calc((100% - 960px)/2);
-            transform: translateX(-1px);
-        }
+      #right-banner {
+        position: fixed;
+        top: 0;
+        height: 100%;
+        right: 0;
+        width: calc((100% - 960px) / 2);
+        transform: translateX(-1px);
+      }
 
-        #top-banner{
-            margin: 0 auto;
-            width: 960px;
-            height: 250px;
-        }
+      #top-banner {
+        margin: 0 auto;
+        width: 960px;
+        height: 250px;
+      }
 
-        #bottom-banner{
-            margin: 0 auto;
-            width: 960px;
-            padding: 0;
-            height: 100px;
-            overflow: hidden;
-        }
+      #bottom-banner {
+        margin: 0 auto;
+        width: 960px;
+        padding: 0;
+        height: 100px;
+        overflow: hidden;
+      }
 
-        .size-info {
-            opacity: 0;
-            transition: 0.4s ease;
-            display: inline-block;
-            padding: 10px 30px;
-            background-color: #ffe185;
-            transform: translate(-49.8%, 0);
-            top: 265px;
-            left: 50%;
-            min-width: 450px;
-            max-width: 850px;
-            position: fixed;
-            z-index: 1000;
-            font-family: "Open Sans", Arial, sans;
-            color: #000;
-            font-weight: regular;
-            font-size: 14px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border: 1px solid #ffbd89;
-        }
-        .size-info.show {
-            opacity: 1;
-        }
+      .size-info {
+        opacity: 0;
+        transition: 0.4s ease;
+        display: inline-block;
+        padding: 10px 30px;
+        background-color: #ffe185;
+        transform: translate(-49.8%, 0);
+        top: 265px;
+        left: 50%;
+        min-width: 450px;
+        max-width: 850px;
+        position: fixed;
+        z-index: 1000;
+        font-family: "Open Sans", Arial, sans;
+        color: #000;
+        font-weight: regular;
+        font-size: 14px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ffbd89;
+      }
+      .size-info.show {
+        opacity: 1;
+      }
 
-        .test-info {
-            max-width: 500px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border: 1px solid #c7c7c7;
-            padding: 10px 20px;
-            background-color: #eeeeee;
-            transform: translate(-49.8%, 0);
-            bottom: 120px;
-            left: 50%;
-            width: 100%;
-            position: fixed;
-            z-index: 1000;
-            font-family: "Open Sans", Arial, sans;
-            color: #9c9c9c;
-            font-weight: regular;
-            font-size: 14px;
-        }
-        .test-info .display { font-weight: bold }
-        .test-info span { display: block }
+      .test-info {
+        max-width: 500px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid #c7c7c7;
+        padding: 10px 20px;
+        background-color: #eeeeee;
+        transform: translate(-49.8%, 0);
+        bottom: 120px;
+        left: 50%;
+        width: 100%;
+        position: fixed;
+        z-index: 1000;
+        font-family: "Open Sans", Arial, sans;
+        color: #9c9c9c;
+        font-weight: regular;
+        font-size: 14px;
+      }
+      .test-info .display {
+        font-weight: bold;
+      }
+      .test-info span {
+        display: block;
+      }
     </style>
-</head>
-<body>
-<div class="header">1</div>
-<div id="content-div" >
-    <div id="left-banner">
-        <iframe id="left-creative" allowFullscreen="true" frameBorder="0" src="left"></iframe>
-    </div>
-    <div id="top-banner">
-        <iframe id="top-creative" frameBorder="0" src="top"></iframe>
-    </div>
-    <div id="right-banner">
-        <iframe id="right-creative" frameBorder="0" src="right"></iframe>
-    </div>
-    <div id="siteImg" class="content">
+  </head>
+  <body>
+    <div class="header">1</div>
+    <div id="content-div">
+      <div id="left-banner">
+        <iframe
+          id="left-creative"
+          allowfullscreen="true"
+          frameborder="0"
+          src="left"
+        ></iframe>
+      </div>
+      <div id="top-banner">
+        <iframe id="top-creative" frameborder="0" src="top"></iframe>
+      </div>
+      <div id="right-banner">
+        <iframe id="right-creative" frameborder="0" src="right"></iframe>
+      </div>
+      <div id="siteImg" class="content">
         <p class="size-info">
-            <span>
-                Your <b>browser window is too small</b> for the ad to serve correctly.<br>
-                In a live environment this creative would not be served.
-            </span>
+          <span>
+            Your <b>browser window is too small</b> for the ad to serve
+            correctly.<br />
+            In a live environment this creative would not be served.
+          </span>
         </p>
-        <p class="test-info"><span class="ua"></span><span class="display"></span></p>
-        <img id="siteImgEl" src="./default.jpg">
+        <p class="test-info">
+          <span class="ua"></span><span class="display"></span>
+        </p>
+        <img id="siteImgEl" src="./default.jpg" />
+      </div>
     </div>
-</div>
 
-<script>
-    function updateTestInfo () {
-        var dpr = (typeof window.devicePixelRatio !== 'undefined') ? window.devicePixelRatio : '1';
-        document.querySelector('.test-info .ua').innerHTML = window.navigator.userAgent;
-        document.querySelector('.test-info .display').innerHTML = 'Screen: ' + window.screen.width + 'x' + window.screen.height + ' - DPR: ' + dpr + ' - Viewport: ' + window.innerWidth + 'x' + window.innerHeight;
-    }
-    function updateMinDisplayWarning () {
-        var minWidth = 960+130+130;
-        if (window.innerWidth < minWidth || (window.innerWidth / window.innerHeight) > 2.5 ) {
-            document.querySelector('.size-info').classList.add('show');
+    <script>
+      function updateTestInfo() {
+        var dpr =
+          typeof window.devicePixelRatio !== "undefined"
+            ? window.devicePixelRatio
+            : "1";
+        document.querySelector(".test-info .ua").innerHTML =
+          window.navigator.userAgent;
+        document.querySelector(".test-info .display").innerHTML =
+          "Screen: " +
+          window.screen.width +
+          "x" +
+          window.screen.height +
+          " - DPR: " +
+          dpr +
+          " - Viewport: " +
+          window.innerWidth +
+          "x" +
+          window.innerHeight;
+      }
+      function updateMinDisplayWarning() {
+        var minWidth = 960 + 130 + 130;
+        if (
+          window.innerWidth < minWidth ||
+          window.innerWidth / window.innerHeight > 2.5
+        ) {
+          document.querySelector(".size-info").classList.add("show");
         } else {
-            document.querySelector('.size-info').classList.remove('show');
+          document.querySelector(".size-info").classList.remove("show");
         }
-    }
-    updateTestInfo();
-    updateMinDisplayWarning();
-    var iframesWindows = document.querySelectorAll('iframe');
-    var initTop;
+      }
+      updateTestInfo();
+      updateMinDisplayWarning();
+      var iframesWindows = document.querySelectorAll("iframe");
+      var initTop;
 
-    if (!Object.assign) {
-        Object.defineProperty(Object, 'assign', {
-            enumerable: false,
-            configurable: true,
-            writable: true,
-            value: function (target) {
-                'use strict';
-                if (target === undefined || target === null) {
-                    throw new TypeError('Cannot convert first argument to object');
-                }
-
-                var to = Object(target);
-                for (var i = 1; i < arguments.length; i++) {
-                    var nextSource = arguments[i];
-                    if (nextSource === undefined || nextSource === null) {
-                        continue;
-                    }
-                    nextSource = Object(nextSource);
-
-                    var keysArray = Object.keys(Object(nextSource));
-                    for (var nextIndex = 0, len = keysArray.length; nextIndex < len; nextIndex++) {
-                        var nextKey = keysArray[nextIndex];
-                        var desc = Object.getOwnPropertyDescriptor(nextSource, nextKey);
-                        if (desc !== undefined && desc.enumerable) {
-                            to[nextKey] = nextSource[nextKey];
-                        }
-                    }
-                }
-                return to;
+      if (!Object.assign) {
+        Object.defineProperty(Object, "assign", {
+          enumerable: false,
+          configurable: true,
+          writable: true,
+          value: function (target) {
+            "use strict";
+            if (target === undefined || target === null) {
+              throw new TypeError("Cannot convert first argument to object");
             }
+
+            var to = Object(target);
+            for (var i = 1; i < arguments.length; i++) {
+              var nextSource = arguments[i];
+              if (nextSource === undefined || nextSource === null) {
+                continue;
+              }
+              nextSource = Object(nextSource);
+
+              var keysArray = Object.keys(Object(nextSource));
+              for (
+                var nextIndex = 0, len = keysArray.length;
+                nextIndex < len;
+                nextIndex++
+              ) {
+                var nextKey = keysArray[nextIndex];
+                var desc = Object.getOwnPropertyDescriptor(nextSource, nextKey);
+                if (desc !== undefined && desc.enumerable) {
+                  to[nextKey] = nextSource[nextKey];
+                }
+              }
+            }
+            return to;
+          },
         });
-    }
+      }
 
-    window.onload = function () {
-
+      window.onload = function () {
         if (iframesWindows) {
+          updateIframes();
+          setInterval(function () {
             updateIframes();
-            setInterval(function () {
-                updateIframes();
 
-                var top = document.querySelector('#top-creative').getBoundingClientRect().top * -1;
-                updateIframes({ scrollPos: top });
-            }, 500);
+            var top =
+              document.querySelector("#top-creative").getBoundingClientRect()
+                .top * -1;
+            updateIframes({ scrollPos: top });
+          }, 500);
         }
-    };
-    window.onresize = function () {
+      };
+      window.onresize = function () {
         updateTestInfo();
         updateMinDisplayWarning();
         if (iframesWindows) {
-            updateIframes();
+          updateIframes();
         }
-    };
-    window.onscroll = function () {
+      };
+      window.onscroll = function () {
         if (iframesWindows) {
-
-            var top = document.querySelector('#top-creative').getBoundingClientRect().top * -1;
-            updateIframes({ scrollPos: top });
+          var top =
+            document.querySelector("#top-creative").getBoundingClientRect()
+              .top * -1;
+          updateIframes({ scrollPos: top });
         }
-    };
+      };
 
-    if (window.addEventListener) {
-        window.addEventListener('message', processIframeMessage, false);
-    } else {
-        window.attachEvent('onmessage', processIframeMessage);
-    }
+      if (window.addEventListener) {
+        window.addEventListener("message", processIframeMessage, false);
+      } else {
+        window.attachEvent("onmessage", processIframeMessage);
+      }
 
-    function processIframeMessage (messageObj) {
+      function processIframeMessage(messageObj) {
         var data = JSON.parse(messageObj.data);
 
-        if (typeof messageObj.data !== 'undefined') {
-            sendPostMessage(data);
+        if (typeof messageObj.data !== "undefined") {
+          sendPostMessage(data);
         }
-    }
+      }
 
-    function sendPostMessage(data) {
+      function sendPostMessage(data) {
         for (var i = 0; i < iframesWindows.length; i++) {
-            iframesWindows[i].contentWindow.postMessage(JSON.stringify(data), '*');
+          iframesWindows[i].contentWindow.postMessage(
+            JSON.stringify(data),
+            "*"
+          );
         }
-    }
+      }
 
-    function updateIframes (obj) {
+      function updateIframes(obj) {
         if (!obj) {
-            obj = {};
+          obj = {};
         }
 
         for (var i = 0; i < iframesWindows.length; i++) {
+          var top = document
+            .querySelector("#top-creative")
+            .parentNode.getBoundingClientRect().top;
 
-            var top = document.querySelector('#top-creative').parentNode.getBoundingClientRect().top;
+          if (typeof initTop === "undefined") {
+            initTop = top;
+          }
 
-            if (typeof initTop === 'undefined') {
-                initTop = top;
-            }
+          var newTop = initTop;
+          if (typeof obj.scrollPos !== "undefined") {
+            newTop = initTop - obj.scrollPos;
+          }
 
-            var newTop = initTop;
-            if (typeof obj.scrollPos !== 'undefined') {
-                newTop = initTop - obj.scrollPos;
-            }
+          if (top < 0) {
+            top = 0;
+          }
 
-            if (top < 0) {
-                top = 0;
-            }
+          document.querySelector("#left-creative").parentNode.style.top =
+            top + "px";
+          document.querySelector("#left-creative").parentNode.style.height =
+            window.innerHeight + "px";
+          document.querySelector("#right-creative").parentNode.style.height =
+            window.innerHeight + "px";
+          document.querySelector("#right-creative").parentNode.style.top =
+            top + "px";
 
-            document.querySelector('#left-creative').parentNode.style.top = top + 'px';
-            document.querySelector('#left-creative').parentNode.style.height = window.innerHeight + 'px';
-            document.querySelector('#right-creative').parentNode.style.height = window.innerHeight + 'px';
-            document.querySelector('#right-creative').parentNode.style.top = top + 'px';
-
-            obj = Object.assign(obj, { h: window.innerHeight, w:window.innerWidth, topOffset: -top, scrollHeight: window.document.body.clientHeight });
-            iframesWindows[i].contentWindow.postMessage(JSON.stringify(obj), '*');
+          obj = Object.assign(obj, {
+            h: window.innerHeight,
+            w: window.innerWidth,
+            topOffset: -top,
+            scrollHeight: window.document.body.clientHeight,
+          });
+          iframesWindows[i].contentWindow.postMessage(JSON.stringify(obj), "*");
         }
-    }
-</script>
-
-</body>
+      }
+    </script>
+  </body>
 </html>
