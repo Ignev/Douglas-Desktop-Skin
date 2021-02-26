@@ -140,7 +140,7 @@ span {
   background-position: 50% 90%;
   background-size: 80%;
   background-color: #fff;
-  animation: pulsBg 3s infinite ease;
+  /* animation: pulsBg 3s infinite ease; */
 }
 @keyframes pulsBg{
   0%{

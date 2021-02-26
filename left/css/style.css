@@ -100,13 +100,19 @@ html {
   position: absolute;
   right: -1%;
   top: -1%;
-  height: 80%;
-  width: 20%;
+  height: 110%;
+  width: auto;
   margin-left: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+.name .slick-slide div{
+  display: flex;
+  justify-content: flex-end;
 }
 .name__media {
-  width: 100% !important;
-  height: 30vh;
+  width: auto !important;
+  height: 31.7vh;
 }
 .logo {
   position: absolute;
@@ -334,5 +340,21 @@ li.slick-active{
   }
   .popup{
     font-size: 4vw;
+  }
+}
+@media screen and (min-device-width: 1280px){
+  .name__media{
+    height: 35.4vh;
+    width: auto;
+  }
+}
+@media screen and (min-device-width: 1440px){
+  .name__media{
+    height: 34.6vh;
+  }
+}
+@media screen and (min-device-width: 1920px){
+  .name__media{
+    height: 32.3vh;
   }
 }
