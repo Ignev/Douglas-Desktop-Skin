@@ -226,6 +226,9 @@ li.slick-active{
   display: flex;
   text-align: center;
 }
+.slick-list, .slick-track{
+  width: 100%;
+}
 .slider__item {
   display: flex !important;
   justify-content: center;
