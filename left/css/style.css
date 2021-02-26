@@ -331,7 +331,7 @@ li.slick-active{
   display: none;
 }
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 1280){
   .popup__text-small{
     display: block;
   }
@@ -356,5 +356,16 @@ li.slick-active{
 @media screen and (min-device-width: 1920px){
   .name__media{
     height: 32.3vh;
+  }
+}
+@media screen and (max-device-width: 1441px){
+  .popup__text-small{
+    display: block;
+  }
+  .popup__text{
+    display: none;
+  }
+  .popup{
+    font-size: 4vw;
   }
 }
