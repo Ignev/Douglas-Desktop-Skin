@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function(){
       ctx.globalCompositeOperation = 'destination-out';
 
       ctx.beginPath();
-      ctx.arc(x, y, 35, 0, 2 * Math.PI);
+      ctx.arc(x, y, 50, 0, 2 * Math.PI);
       ctx.fill();
 
       ctx.lineWidth = 0;
