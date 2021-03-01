@@ -119,6 +119,8 @@ html {
   bottom: -0.2%;
   right: 0;
   width: 70%;
+  min-width: 100px;
+  max-width: 330px;
   display: flex;
 }
 .logo__media {
@@ -244,6 +246,8 @@ li.slick-active{
   width: 60%;
   max-width: 218px;
   max-height: 288.8px;
+  min-width: 147px;
+  min-height: 204px;
   display: flex;
   justify-content: center;
   margin: 0 !important;
@@ -271,6 +275,8 @@ li.slick-active{
 }
 .plus__media {
   width: 100%;
+  min-width: 32px;
+  min-height: 32px;
 }
 
 .bottom__button {
@@ -280,6 +286,8 @@ li.slick-active{
   z-index: 999;
   position: absolute;
   width: 80%;
+  max-width: 377px;
+  min-width: 100px;
   display: flex;
   height: 12%;
 }

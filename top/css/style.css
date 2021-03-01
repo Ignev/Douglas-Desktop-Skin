@@ -15,9 +15,19 @@ html {
 
 body{ 
   background-color: #fff; 
-  background-image: url(../img/logo-1.png);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+}
+.logo{
+  pointer-events: none;
+  position: absolute;
+  top: 30%;
+  left: 32%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logo-1{
+  margin-bottom: 10px;
 }
 canvas {
   background: transparent;
@@ -27,8 +37,8 @@ canvas {
 #tap{
   position: absolute;
   z-index: 1000;
-  top: 50%;
-  left: calc(50% - 100px);
+  top: 70%;
+  left: 45%;
   width: 100px;
   
 }
