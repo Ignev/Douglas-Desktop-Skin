@@ -67,7 +67,7 @@
         }, 1000);
       };
       var isFixed = true;
-      var clickTag = "https://klarna.de",
+      var clickTag = "",
         clickoutLinkRedirect = readGETParameter("clicktag"),
         clickoutLink2 = readGETParameter("dspxct"),
         clickoutEncodeLevel = readGETParameter("encodelevel");
@@ -82,6 +82,10 @@
         }
         return c == "encodelevel" ? 2 : 0;
       }
+      var x_click = document.getElementsByTagName("body")[0];
+      x_click.addEventListener("click", () => {
+        clickout_1();
+      });
       function clickout_1() {
         var e = clickTag;
         if (clickoutLinkRedirect != 0) {

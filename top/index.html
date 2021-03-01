@@ -19,7 +19,10 @@
     <script src="js/script.js"></script>
     <script>
       var hellopreloader = document.getElementById("hellopreloader_preload");
-
+      var x_click = document.getElementsByTagName("body")[0];
+      x_click.addEventListener("click", () => {
+        clickout_1();
+      });
       function fadeOutnojquery(el) {
         el.style.opacity = 1;
         var interhellopreloader = setInterval(function () {
@@ -37,7 +40,7 @@
       };
 
       var isFixed = true;
-      var clickTag = "https://klarna.de",
+      var clickTag = "",
         clickoutLinkRedirect = readGETParameter("clicktag"),
         clickoutLink2 = readGETParameter("dspxct"),
         clickoutEncodeLevel = readGETParameter("encodelevel");

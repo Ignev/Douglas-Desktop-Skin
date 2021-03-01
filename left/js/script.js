@@ -45,23 +45,39 @@ document.addEventListener("DOMContentLoaded", function(){
     autoplay: false,
     asNavFor: ".slider",
   });
+
+  const dots = document.querySelector(".slick-dots").childNodes;
+  dots.forEach(function (item) {
+    item.addEventListener("click", function (e) {
+      e.preventDefault();
+	    e.stopPropagation();
+    })
+  })
+  console.log(dots);
   
   function closePopup(closeBtnSelector, popupSelector) {
     const closeBtn = document.querySelector(closeBtnSelector);
     const popup = document.querySelector(popupSelector);
   
-    closeBtn.addEventListener("click", function () {
+    closeBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+	    e.stopPropagation();
       popup.style.animation = "fadeOut 1s ease";
       setTimeout(() => {
         popup.style.display = "none";
       }, 1000);
     });
   }
+
+  
   function openPopup(openBtnSelector, popupSelector) {
+    
     const openBtn = document.querySelector(openBtnSelector);
     const popup = document.querySelector(popupSelector);
   
-    openBtn.addEventListener("click", function () {
+    openBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+	    e.stopPropagation();
       popup.style.display = "flex";
       popup.style.animation = "fadeIn 1s ease";
     });
