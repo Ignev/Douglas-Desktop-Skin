@@ -121,26 +121,7 @@ html {
   height: 100%;
   width: 100%;
   background-color: #000;
-  background-image: url(../img/tap.png) ;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: 70px 36px;
-  position: relative;
   overflow: hidden;
-}
-span {
-  width: 90px;
-  height: 90px;
-  position: absolute;
-  background-image: url(../img/top-logo-text.png);
-  background-repeat: no-repeat;
-  pointer-events: none;
-  border-radius: 50%;
-  background-attachment: fixed;
-  background-position: 50% 90%;
-  background-size: 80%;
-  background-color: #fff;
-  /* animation: pulsBg 3s infinite ease; */
 }
 @keyframes pulsBg{
   0%{

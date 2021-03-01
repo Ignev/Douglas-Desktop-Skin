@@ -20,13 +20,13 @@ document.addEventListener("DOMContentLoaded", function(){
     autoplay: false,
     asNavFor: ".top-woman",
   });
-  const mybody = document.querySelector(".bottom__canvas");
-  mybody.addEventListener("mousemove", function (e) {
-    const round = document.createElement("span");
-    round.style.left = -45 + e.offsetX + "px";
-    round.style.top = -45 + e.offsetY + "px";
-    mybody.appendChild(round);
-  });
+  // const mybody = document.querySelector(".bottom__canvas");
+  // mybody.addEventListener("mousemove", function (e) {
+  //   const round = document.createElement("span");
+  //   round.style.left = -45 + e.offsetX + "px";
+  //   round.style.top = -45 + e.offsetY + "px";
+  //   mybody.appendChild(round);
+  // });
   
   window.addEventListener(
     "message",

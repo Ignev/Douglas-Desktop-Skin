@@ -13,27 +13,21 @@ html {
   width: 100%;
   overflow: hidden;
 }
-body,
-html {
-  background-color: #000;
-  background-image: url(../img/tap.png) ;
+
+body{ 
+  background-color: #fff; 
+  background-image: url(../img/logo-1.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-size: 140px 72px;
 }
-span{
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  background: url(../img/logo-1.png) no-repeat;
-  pointer-events: none;
-  border-radius: 50%;
-  background-attachment: fixed;
-  background-position: 50% 50%;
-  background-color: #fff;
+canvas {
+  background: transparent;
+  width: 100%;
+  height: 100%;
 }
 
-#hellopreloader>p{
+
+/* #hellopreloader>p{
   display:none;
 }
 
@@ -47,4 +41,4 @@ span{
   height: 100%;
   background: #222222 url(../img/audio.svg) center center no-repeat;
   background-size:41px;
-}
+} */
