@@ -8,7 +8,6 @@
 }
 body,
 html {
-  background: #000;
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -25,9 +24,25 @@ canvas {
   width: 100%;
   height: 100%;
 }
+#tap{
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  left: calc(50% - 100px);
+  width: 100px;
+  
+}
+@keyframes fadeOut{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
 
 
-/* #hellopreloader>p{
+#hellopreloader>p{
   display:none;
 }
 
@@ -41,4 +56,4 @@ canvas {
   height: 100%;
   background: #222222 url(../img/audio.svg) center center no-repeat;
   background-size:41px;
-} */
+}
