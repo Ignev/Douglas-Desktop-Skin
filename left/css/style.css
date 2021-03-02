@@ -216,6 +216,7 @@ li.slick-active{
 }
 .popup__close{
   width: 10%;
+  max-width: 32px;
   position: absolute;
   right: 5px;
   top: 5px;
@@ -230,7 +231,7 @@ li.slick-active{
   margin-bottom: 25px;
 }
 .popup__text{
-  font-size: 3.1vw;
+  font-size: 12px;
   display: flex;
   text-align: center;
 }
@@ -246,8 +247,8 @@ li.slick-active{
   width: 60%;
   max-width: 218px;
   max-height: 288.8px;
-  min-width: 147px;
-  min-height: 204px;
+  min-width: 127px;
+  min-height: 184px;
   display: flex;
   justify-content: center;
   margin: 0 !important;
@@ -283,6 +284,7 @@ li.slick-active{
   top: -1%;
   left: 0;
   height: 25% !important;
+  max-height: 58.5px !important;
   z-index: 999;
   position: absolute;
   width: 80%;
@@ -375,5 +377,16 @@ li.slick-active{
   }
   .popup{
     font-size: 4vw;
+  }
+}
+@media screen and (min-device-width: 1920px){
+  .popup__text-small{
+    display: none;
+  }
+  .popup__text{
+    display: block;
+  }
+  .popup{
+    font-size: 12px;
   }
 }
