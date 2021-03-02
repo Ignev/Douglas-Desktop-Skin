@@ -117,6 +117,7 @@ html {
 }
 .video {
   width: 100%;
+  min-width: 160px;
 }
 .bottom {
   background-color: #fff; 

@@ -149,6 +149,7 @@ html {
   position: relative;
   width: 100%;
   max-height: 100%;
+  min-width: 160px;
   display: flex !important;
   justify-content: center;
   align-items: center;
@@ -318,7 +319,7 @@ li.slick-active{
   background: #000;
   padding: 10px;
   color: #e6e5eb;
-  font-size: 15зч;
+  font-size: 15px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -374,7 +375,7 @@ li.slick-active{
     height: 32.3vh;
   }
 }
-@media screen and (max-device-width: 1441px){
+@media screen and (max-width: 1441px){
   .popup__text-small{
     display: block;
   }
@@ -384,7 +385,11 @@ li.slick-active{
   .popup{
     font-size: 4vw;
   }
+  .bottom__text{
+    font-size: 3.2vw !important;
+  }
 }
+
 @media screen and (min-device-width: 1920px){
   .popup__text-small{
     display: none;
