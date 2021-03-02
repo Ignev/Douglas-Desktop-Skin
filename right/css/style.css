@@ -25,7 +25,6 @@ html {
   position: relative;
   display: flex;
   flex-direction: column;
-  max-height: 1080px !important;
 }
 .top,
 .center,
@@ -33,7 +32,6 @@ html {
   position: relative;
   width: 100%;
   overflow: hidden;
-  max-width: 480px !important;
 }
 .top,
 .center {
@@ -231,4 +229,17 @@ canvas {
   height: 100%;
   background: #222222 url(../img/audio.svg) center center no-repeat;
   background-size:41px;
+}
+@media screen and (max-width: 1441px){
+  .bottom__text{
+    font-size: 3.2vw !important;
+  }
+}
+@media screen and (min-wdth: 1980px){
+  .top,.center,.botton{
+    max-width: 480px !important;
+  }
+  body{
+    max-height: 1080px !important;
+  }
 }

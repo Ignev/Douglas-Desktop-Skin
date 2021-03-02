@@ -25,7 +25,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  max-height: 1080px !important;
+  
 }
 .top,
 .center,
@@ -33,7 +33,6 @@ html {
   position: relative;
   width: 100%;
   overflow: hidden;
-  max-width: 480px !important;
 }
 .top,.center{
   height: 38%;
@@ -118,7 +117,7 @@ html {
 .name__media {
   width: auto !important;
   height: 31.7vh;
-  max-height: 312.98px;
+  max-height: 402.98px;
 }
 .logo {
   position: absolute;
@@ -254,8 +253,8 @@ li.slick-active{
   width: 60%;
   max-width: 218px;
   max-height: 288.8px;
-  min-width: 127px;
-  min-height: 184px;
+  min-width: 100px;
+  min-height: 157px;
   display: flex;
   justify-content: center;
   margin: 0 !important;
@@ -277,9 +276,7 @@ li.slick-active{
 .slider__plus {
   position: absolute;
   right: 20%;
-  width: 10%;
-  max-width: 45px;
-  max-height: 45px;
+  width: 31px;
 }
 .plus__media {
   width: 100%;
@@ -372,8 +369,9 @@ li.slick-active{
 }
 @media screen and (min-device-width: 1920px){
   .name__media{
-    height: 32.3vh;
+    height: 32.7vh;
   }
+
 }
 @media screen and (max-width: 1441px){
   .popup__text-small{
@@ -399,5 +397,13 @@ li.slick-active{
   }
   .popup{
     font-size: 12px;
+  }
+}
+@media screen and (min-wdth: 1980px){
+  .top,.center,.botton{
+    max-width: 480px !important;
+  }
+  body{
+    max-height: 1080px !important;
   }
 }

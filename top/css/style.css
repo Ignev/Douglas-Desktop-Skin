@@ -19,8 +19,8 @@ body{
 .logo{
   pointer-events: none;
   position: absolute;
-  top: 30%;
-  left: 32%;
+  top: 40%;
+  left: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,6 +28,12 @@ body{
 }
 .logo-1{
   margin-bottom: 10px;
+  width: 175px;
+  height: 32px;
+}
+.logo-2{
+  width: 102px;
+  height: 17px;
 }
 canvas {
   background: transparent;
