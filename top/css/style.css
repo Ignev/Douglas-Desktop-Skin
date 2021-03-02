@@ -19,21 +19,21 @@ body{
 .logo{
   pointer-events: none;
   position: absolute;
-  top: 40%;
-  left: 40%;
+  top: 30%;
+  left: 32%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 30%;
 }
 .logo-1{
   margin-bottom: 10px;
-  width: 175px;
-  height: 32px;
+  width: 100%;
 }
 .logo-2{
-  width: 102px;
-  height: 17px;
+  margin-bottom: 10px;
+  width: 70%;
 }
 canvas {
   background: transparent;
