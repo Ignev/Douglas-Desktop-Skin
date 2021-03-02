@@ -252,8 +252,6 @@ li.slick-active{
   width: 60%;
   max-width: 218px;
   max-height: 288.8px;
-  min-width: 100px;
-  min-height: 157px;
   display: flex;
   justify-content: center;
   margin: 0 !important;
