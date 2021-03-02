@@ -92,9 +92,9 @@ html {
 }
 .logo__text{
   position: absolute;
-  width: 40%;
+  width: 50%;
   right: 40%;
-  bottom: 20%;
+  bottom: 15%;
 }
 .center {
   position: relative;
