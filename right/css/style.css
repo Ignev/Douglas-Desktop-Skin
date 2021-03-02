@@ -235,8 +235,8 @@ canvas {
     font-size: 3.2vw !important;
   }
 }
-@media screen and (min-wdth: 1980px){
-  .top,.center,.botton{
+@media screen and (min-device-width: 1980px){
+  .top,.center,.bottom{
     max-width: 480px !important;
   }
   body{
