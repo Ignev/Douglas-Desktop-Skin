@@ -124,6 +124,7 @@ html {
   right: 0;
   width: 70%;
   max-width: 330px;
+  min-width: 100px;
   display: flex;
 }
 .logo__media {
@@ -290,20 +291,20 @@ li.slick-active{
   z-index: 999;
   position: absolute;
   width: 80%;
-  max-width: 377px;
+  max-width: 330px;
   min-width: 100px;
   display: flex;
   height: 12%;
 }
 .button__bg {
+  position: absolute;
   width: 100%;
-  height: 100%;
 }
 .button__media {
   position: absolute;
-  width: 50%;
+  width: 55%;
   right: 40%;
-  top: 10%;
+  top: 15%;
 }
 .bottom__text {
   font-family: "Avenir", sans-serif;
