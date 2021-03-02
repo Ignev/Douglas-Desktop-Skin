@@ -67,7 +67,7 @@ html {
   background-size: cover ;
 }
 #bottom-woman-1{
-  background: url(../img/bottom-img-1.jpg) 50% 20% no-repeat;
+  background: url(../img/bottom-img-1.jpg) 50% 0% no-repeat;
   background-size: cover;
 }
 #bottom-woman-2{
@@ -262,10 +262,13 @@ li.slick-active{
   height: 100%;
 }
 .img__media1{
-  width: 120%;
+  width: 95%;
+}
+.img__media2{
+  width: 80%;
 }
 .img__media3{
-  width: 110%;
+  width: 85%;
 }
 .slick-track{
   max-height: 100%;
